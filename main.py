@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import time
 from datetime import date, timedelta
-# import requests # Removed this line to fix the "ModuleNotFoundError". Re-add and install when doing API integration!
+import requests 
 
 # --- Configuration for Streamlit App ---
 st.set_page_config(
