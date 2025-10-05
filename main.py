@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import time
 from datetime import date, timedelta
-import requests # You will use this library for real API calls
+# import requests # Removed this line to fix the "ModuleNotFoundError". Re-add and install when doing API integration!
 
 # --- Configuration for Streamlit App ---
 st.set_page_config(
@@ -35,13 +35,14 @@ def fetch_historical_climate_data_api(lat, lon, month, day):
     HACKATHON STEP 1 BLUEPRINT: FAST DATA FETCH
     
     ACTION: Replace the simulation below with your actual API integration.
-    You will need to use 'requests.get(nasa_api_url)' here.
+    You will need to import and use the 'requests' library here.
     
     The goal is to get 30 yearly data points for the specific day of the year (month/day).
     """
     
     # -------------------------------------------------------------------------
     # !!! START OF REAL API INTEGRATION ZONE !!!
+    # (Remember to 'import requests' globally or locally when implementing this)
     # -------------------------------------------------------------------------
     
     # Example API endpoint structure (NOT REAL, just for illustration):
